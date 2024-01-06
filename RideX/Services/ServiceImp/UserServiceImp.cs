@@ -3,7 +3,7 @@ public class UserManager : IUserActions
     public void UpdateProfile(User user)
     {
         // Implementation to update user profile
-        Console.WriteLine($"User profile updated for user {user.Username}");
+        //Console.WriteLine($"User profile updated for user {user.Username}");
     }
 
     public void ChangePassword(User user, string newPassword)
@@ -85,6 +85,10 @@ public class UserManager : IUserActions
 
     public bool Register(User register)
     {
+        //validate input
+        if(string.IsNullOrEmpty(register.Email))
+        if (register.Username == "" ||
+         register.Password == "") return false;
         throw new NotImplementedException();
     }
 
