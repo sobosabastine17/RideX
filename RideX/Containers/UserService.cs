@@ -102,7 +102,8 @@ public class UserService : IUserService
 
     public List<User> GetUsers()
     {
-        throw new NotImplementedException();
+        return this.context.Users.ToList();
+        //throw new NotImplementedException();
     }
 
     // Other implementations of user-related actions...

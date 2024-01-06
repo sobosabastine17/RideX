@@ -15,4 +15,12 @@ public class UserController : ControllerBase
     public string name(){
         return "Sabas";
     }
+    [HttpGet]
+    public IActionResult GetAll(){
+        var data= this.service.GetUsers();
+        if(data==null){
+            return NotFound();
+        }
+        return Ok(data);
+    }
 }
