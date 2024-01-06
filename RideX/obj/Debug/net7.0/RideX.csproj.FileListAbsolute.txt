@@ -31,3 +31,4 @@
 /Users/sabastinesobo/C# prj/RideX/RideX/obj/Debug/net7.0/RideX.pdb
 /Users/sabastinesobo/C# prj/RideX/RideX/obj/Debug/net7.0/RideX.genruntimeconfig.cache
 /Users/sabastinesobo/C# prj/RideX/RideX/obj/Debug/net7.0/ref/RideX.dll
+/Users/sabastinesobo/C# prj/RideX/RideX/obj/Debug/net7.0/RideX.sourcelink.json

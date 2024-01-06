@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-public class User
+using Microsoft.EntityFrameworkCore;
+public class User : DbContext
 {
     public int ID { get; set; }
 

@@ -1,5 +1,13 @@
-public class UserManager : IUserActions
+using RideX.Services;
+
+public class UserService : IUserService
 {
+    //DB Dependency injection
+    private readonly LearndataContext context;
+    //userService contructor
+    public UserService(LearndataContext context) {
+        this.context=context;
+    }
     public void UpdateProfile(User user)
     {
         // Implementation to update user profile
@@ -89,6 +97,11 @@ public class UserManager : IUserActions
         if(string.IsNullOrEmpty(register.Email))
         if (register.Username == "" ||
          register.Password == "") return false;
+        throw new NotImplementedException();
+    }
+
+    public List<User> GetUsers()
+    {
         throw new NotImplementedException();
     }
 

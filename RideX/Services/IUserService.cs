@@ -1,6 +1,15 @@
-public interface IUserActions
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace RideX.Services
 {
-    //method to login user
+    public interface IUserService
+    {
+        //get all user
+        List<User> GetUsers();
+          //method to login user
     void Login(string username, string password);
     //method to register user
     bool Register(User register);
@@ -12,5 +21,5 @@ public interface IUserActions
     void CreatePost(User user, string content); // Method to create a post or content
     void LikePost(User user, int postId); // Method to like a post
     void CommentOnPost(User user, int postId, string comment); // Method to comment on a post
-    // Other user-related actions...
+    }
 }
