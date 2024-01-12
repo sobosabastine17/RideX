@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 
-public class LearndataContext : DbContext
+public class AppContext : DbContext
 {
-    public LearndataContext(DbContextOptions<LearndataContext> options) : base(options)
+    public AppContext(DbContextOptions<AppContext> options) : base(options)
     {
     }
 

@@ -10,9 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IUserService,UserService>();
-builder.Services.AddDbContext<LearndataContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("MyPostgresConnection")));
-
+//builder.Services.AddDbContext<LearndataContext>(options =>options.UseNpgsql(builder.Configuration.GetConnectionString("MyPostgresConnection")));
+builder.Services.AddDbContext<AppContext>();
 
 var app = builder.Build();
 

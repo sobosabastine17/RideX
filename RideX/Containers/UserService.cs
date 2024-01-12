@@ -3,9 +3,9 @@ using RideX.Services;
 public class UserService : IUserService
 {
     //DB Dependency injection
-    private readonly LearndataContext context;
+    private readonly AppContext context;
     //userService contructor
-    public UserService(LearndataContext context) {
+    public UserService(AppContext context) {
         this.context=context;
     }
     public void UpdateProfile(User user)
