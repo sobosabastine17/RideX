@@ -1,8 +1,8 @@
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/RideX
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/appsettings.Development.json
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/appsettings.json
+/Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/global.json
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/RideX.dll
-/Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/RideX.deps.json
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/RideX.runtimeconfig.json
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/RideX.pdb
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/Azure.Core.dll
@@ -38,3 +38,4 @@
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/System.Security.Cryptography.ProtectedData.dll
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/System.Security.Permissions.dll
 /Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/System.Windows.Extensions.dll
+/Users/sabastinesobo/C# prj/RideX/RideX/bin/Debug/net8.0/linux-x64/publish/RideX.deps.json

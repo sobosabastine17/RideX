@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RideX")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+741e31c16a020acdfc67e43461be7e8b640d6e21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+690ce9e17a85e20c904f087f13332abd66d7f0b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("RideX")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RideX")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

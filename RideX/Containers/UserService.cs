@@ -3,10 +3,10 @@ using RideX.Services;
 public class UserService : IUserService
 {
     //DB Dependency injection
-    private readonly ApiDbContext context;
+    private readonly ApiDbContext apiDbContext;
     //userService contructor
-    public UserService(ApiDbContext context) {
-        this.context=context;
+    public UserService(ApiDbContext apiDbContext) {
+        this.apiDbContext=apiDbContext;
     }
     public void UpdateProfile(User user)
     {
@@ -102,8 +102,24 @@ public class UserService : IUserService
 
     public List<User> GetUsers()
     {
-        return this.context.Users.ToList();
+        return this.apiDbContext.Users.ToList();
         //throw new NotImplementedException();
+    }
+
+    public List<User> GetAllUsers()
+    {
+          var user = new User(){
+              Username = "exampleUsername",
+              Email = "example@email.com",
+              Password = "examplePassword",
+              PhoneNumber = "1234567890"
+
+            };
+            apiDbContext.Add(user);
+             apiDbContext.SaveChanges();
+            var allUsers =  apiDbContext.Users.ToList();
+            return allUsers;
+      //  throw new NotImplementedException();
     }
 
     // Other implementations of user-related actions...

@@ -21,5 +21,6 @@ namespace RideX.Services
     void CreatePost(User user, string content); // Method to create a post or content
     void LikePost(User user, int postId); // Method to like a post
     void CommentOnPost(User user, int postId, string comment); // Method to comment on a post
+    List<User> GetAllUsers();
     }
 }
