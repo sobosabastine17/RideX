@@ -5,14 +5,20 @@ EXPOSE 5273
 ENV ASPNETCORE_URLS=http://+:5273
 
 USER app
+
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG configuration=Release
 WORKDIR /src
+
+# Explicitly copy the project file
+#COPY RideX/RideX.csproj RideX/
 COPY *.csproj ./
-RUN dotnet restore  # Remove the project file argument
-COPY . .
-WORKDIR "/src/RideX"
+RUN dotnet restore 
+
+COPY . ./
+#WORKDIR "/src/RideX"
 RUN dotnet build -c $configuration -o /app/build
+#RUN dotnet build -c Release -o out 
 
 FROM build AS publish
 ARG configuration=Release
